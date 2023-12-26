@@ -1,0 +1,127 @@
+body{
+    font-family: 'Poppins';
+    background-color: #D5DCE3;
+}
+.box {
+    width: 100%;
+    max-width: 1150px;
+    margin: 5% auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 31px;
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .property {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    padding: 14px 9px;
+  }
+  
+  .property h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .ticket {
+    background-color: rgba(3,94,123,0.2);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .ticket-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover{
+    color: dimgray;
+  }
+  
+  .ticket-department {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .ticket-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ticket-priority {
+    font-weight: 500;
+    margin-right: 10px;
+  }
+
+  .high{
+    background-color: red;
+    padding: 5px 18px;
+    border-radius: 5px;
+    font-size: 0.8em;
+  }
+
+  .medium{
+    background-color: #EFCA08;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+  }
+
+  .low{
+    background-color: green;
+    padding: 5px 22px;
+    border-radius: 5px;
+    font-size: 0.8em;
+  }
+  
+  .ticket-hashtag {
+    background-color: #739AB1;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+  }
+  
+  
+  .divider {
+    align-self: stretch;
+    width: 0.5px;
+    background-color: black;
+  }
+  
+  @media (max-width: 600px) {
+    .row {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .property {
+      margin-bottom: 20px;
+    }
+  
+    .divider {
+      width: 100%;
+      height: 1px;
+      margin-bottom: 20px;
+    }
+  }

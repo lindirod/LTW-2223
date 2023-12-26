@@ -1,0 +1,143 @@
+.popup{
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 117%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-content{
+  height: 720px;
+  width: 620px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close{
+ position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #fff;
+    height: 32px;
+    width: 34px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.button_sub{
+font-family: 'Poppins';
+appearance: none;
+background-color: #182139;
+border: 2px solid #182139;
+border-radius: 15px;
+box-sizing: border-box;
+color: white;
+cursor: pointer;
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+margin: 0;
+min-height: 60px;
+min-width: 0;
+width: 230px;
+outline: none;
+padding: 16px 24px;
+text-decoration: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+will-change: transform;
+}
+
+.button_sub:disabled {
+pointer-events: none;
+}
+
+.button_sub:hover {
+color: #fff;
+background-color: #182139;
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
+
+.button_sub:active {
+box-shadow: none;
+transform: translateY(0);
+}
+
+.popup-content label{
+  margin-top: 0px;
+}
+
+.popup form {
+    display: grid;
+    grid-template-columns: 150px 300px;
+    grid-template-rows: 92px 118px 118px 118px 102px 76px;
+    max-width: 494px;
+    margin: 0 auto;
+    position: relative;
+}
+.popup p{
+  font-weight: bold;
+}
+
+.popup label {
+  font-weight: bold;
+}
+
+.popup textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  resize: none;
+}
+
+.popup input[type="text"]{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  padding:2px;
+  height: 36px;
+}
+.popup input[type="radio"] {
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: 18px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+/* Style the label and radio button */
+.two-column label {
+  display: block;
+  font-weight: bold;
+}
+
+.popup select{
+  height: 48px;
+  font-family: 'Poppins';
+  border-radius: 3px;
+}
+
+.write{
+  display: grid;
+  grid-template-columns: 494px 0px;
+  height: 28px;
+  width: fit-content;
+  font-size: 18px;
+}

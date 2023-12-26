@@ -1,0 +1,58 @@
+body {
+  font-family: 'Poppins';
+  background-color: #D5DCE3;
+}
+
+
+.row{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 100px;
+}
+
+
+.forms input[type=text] {
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 15px 4px rgba(0,0,0,0.20); 
+  border-radius:10px;
+  border: 0;
+  font-family: 'Poppins';
+}
+
+.forms input[type=email] {
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 15px 4px rgba(0,0,0,0.20); 
+  border-radius:10px;
+  border: 0;
+  font-family: 'Poppins';  
+}
+
+.forms input[type=submit] {
+  padding: 10px;
+  border-radius: 25% 10%;
+  background: linear-gradient(#0B5F7E,#002337);
+  border: 0;
+  color: aliceblue;
+  cursor: pointer;
+  margin-bottom: 80px;
+  font-family: 'Poppins';
+}
+
+.forms input[type=submit]:hover {
+  background: linear-gradient(#0B5F7E,#002337);
+  color: #BDCAD5;
+}
+
+.forms textarea {
+  width:60%;
+  padding:10px;
+  resize: none;
+  border-radius:10px;
+  border:0;
+  box-shadow: 0 0 15px 4px rgba(0,0,0,0.20); 
+  height:150px;
+  font-family: 'Poppins';
+}
+

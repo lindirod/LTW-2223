@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap');
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2em;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px 16px;
+}
+
+.navigation a:hover {
+    color: #182139;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    background-color: #243f61;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: 'Poppins';
+    margin: -8px;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    row-gap: 1em;
+    align-items: center;
+}
+
+nav section {
+    color: white;
+    text-align: left;
+    margin-left: 48px;
+}
+
+nav h2 {
+    
+    font-size: xx-large;
+    color: white;
+}
+
+nav h3 {
+    font-size: medium;
+    color: white;
+}
+
+.navbar img {
+    width: 100%;
+    max-width: 200px;
+    justify-self: start;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        grid-template-columns: 1fr;
+        row-gap: 1em;
+        justify-items: center;
+    }
+    
+    .navigation {
+        justify-content: center;
+        justify-self: stretch;
+    }
+    
+    .navbar img {
+        max-width: 150px;
+        justify-self: center;
+    }
+    
+    nav section {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}

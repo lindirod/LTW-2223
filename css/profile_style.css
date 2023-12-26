@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap');
+
+body {
+  font-family: 'Poppins';
+  background-color: #D5DCE3;
+  margin-left: 0;
+}
+
+.departmentsassign {
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto; /* Center the box horizontally */
+  display: flex;
+  justify-content: center;
+}
+
+
+
+nav button {
+  font-family: 'Poppins';
+  position: absolute;
+  top: 223px;
+  right: 25px;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #182139;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+nav button:disabled {
+  pointer-events: none;
+}
+
+nav button:hover, #newDepartment:hover {
+  color: #fff;
+  background-color: #182139;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+nav button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.mainprofile img{
+  border-radius: 25%;
+  position: relative;
+  bottom: 62px;
+  left: 2px;
+  width: 170px;
+}
+
+.mainprofile a{
+  color: white;
+}
+
+
+#info button {
+  font-family: 'Poppins';
+  position: absolute;
+  top: 294px;
+  left: 190px;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #182139;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+#info button:disabled {
+  pointer-events: none;
+}
+
+#info button:hover{
+  color: #fff;
+  background-color: #182139;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#info button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+#info h3{
+  position: absolute;
+  top: 369px;
+  left: 198px;
+  font-weight: 600;
+  font-size: larger;  
+  margin: 18px 0px;  
+}
+
+#info p{
+  position: absolute;
+  top: 391px;
+  left: 198px;
+  font-weight: 600; 
+  margin: 18px 0px;  
+}
+
+
+.mainprofile{
+  background-image: url(../images/profile_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 73vh;
+  margin-right: -8px;
+  margin-bottom: -50px;
+}
+
+
+
+#sections {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  bottom: 5em;
+}
+
+#section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  position: relative;
+  bottom: 5em;
+}
+
+
+
+.ticket-section,
+.profile-section {
+  background: #243F61;
+  border-radius: 4px;
+  padding: 20px;
+  position: relative;
+  padding-bottom: 100px;
+  flex-grow: 1;
+  max-width: 44em;
+  color: #FFFFFF;
+  margin-bottom: 1em;
+}
+
+.ticket-section{
+  width: 0%;
+  float: left;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0em 6em 6em 0em;
+}
+
+
+
+
+.profile-section {
+  width: 60%;
+  float: right;
+  flex-basis: 200px;
+  font-size: smaller;
+  margin-left: 2em;
+  border-radius: 6em 0em 0em 6em;
+}
+
+.mainprofile section img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -2em;
+  margin-top: 4em;
+  max-width: 100%;
+  height: auto;
+}
+
+.mainprofile section a {
+  display: block; 
+  text-align: start; 
+  margin-left: 59px;
+  margin-bottom: 20px; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+#text,
+#number {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: larger;
+}
+
+.number{
+  text-align: center;
+}  
+
+.mainprofile section #more {
+  display: none;
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+
+.mainprofile section button{
+  border-radius: 1em;
+  font-family: 'Poppins';
+  appearance: none;
+  background-color: #ffffff;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #10235d;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 16px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+.mainprofile section button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  border-radius: 1em;
+}
+
+.mainprofile section button:hover:before {
+  border-radius: 1em;
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.mainprofile section button:after {
+  background-color: #FFFFFF;
+}
+
+
+#more {
+  display: none;
+}
+
+#editProfileForm label {
+  font-size: 1.5em;
+  margin: 1em;
+  display: inline-block;
+  width: 100px;
+  text-align: initial;
+  margin-right: 10px;
+  
+}
+
+#editProfileForm input[type="text"],
+#editProfileForm input[type="email"],
+#editProfileForm input[type="password"] {
+  font-family: 'Poppins';
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 5em;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 9px;
+  border: 0;
+}
+  
+  #editProfileForm button[type="submit"] {
+    margin-top: 10px;
+  }
+
+  #editProfileForm {
+    margin-left: 5em;
+  }
+
+  #newDepartment {
+    font-family: 'Poppins';
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #182139;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 1em;
+    text-align: center;
+    margin:  auto; 
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+  }
+
+  #newDepartment:hover{
+    background-color: #243F61;
+    color: white;
+  }
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addDepartment {
+  max-width: 400px;
+  padding: 29px;
+  background-color: #243F61;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 64px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.addDepartment label {
+  display: block;
+  margin-bottom: 10px;
+  border: 1em;
+}
+
+.addDepartment input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 17px;
+}
+
+  
+
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+  .mainprofile {
+    flex-wrap: wrap;
+  }
+
+  .ticket-section,
+  .profile-section {
+    max-width: 100%;
+  }
+
+  .mainprofile section img {
+    max-width: 80%; /* Reduce image size for smaller screens */
+  }
+
+  .mainprofile section button {
+    bottom: 20px; /* Adjust the distance from the bottom for smaller screens */
+  }
+}

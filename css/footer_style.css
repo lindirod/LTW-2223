@@ -1,0 +1,82 @@
+.footer {
+    background-color: #1a1d24;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.footer a{
+    color: #fff;
+}
+.footer:hover {
+    pointer-events: auto;
+}
+
+.sm-header {
+    text-transform: uppercase;
+    cursor: pointer;
+    pointer-events: auto;
+    margin-left: 19px;
+}
+
+.line {
+    width: 15em;
+    height: 3px;
+    background-color: #fff;
+    margin-left: auto;
+    transform: scaleX(0.2);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.footer:hover .line {
+    transform: scaleX(1);
+}
+
+.footer-list {
+    display: flex;
+    list-style: none;
+}
+
+.footer-item {
+    margin-inline: 2.5rem;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.footer-item:nth-child(odd) {
+    transform: translateY(-5rem);
+}
+
+.footer-item:nth-child(even) {
+    transform: translateY(-5rem);
+}
+
+footer:hover .footer-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.footer-link i {
+    transition: color 0.5s;
+}
+
+.footer-link:hover i.fa-facebook-f {
+    color: #3b5998;
+}
+
+.footer-link:hover i.fa-twitter {
+    color: #1da1f2;
+}
+
+.footer-link:hover i.fa-instagram {
+    color: #ea4c89;
+}
+
+.footer-link:hover i.fa-linkedin-in {
+    color: #0077b5;
+}
